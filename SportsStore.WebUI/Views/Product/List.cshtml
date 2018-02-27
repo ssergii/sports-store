@@ -1,0 +1,16 @@
+﻿@using SportsStore.Domain.Entities
+@model IEnumerable<Product>
+
+@{
+    ViewBag.Title = "List of Products";
+}
+
+@foreach (var product in Model)
+{
+    <div>
+        <h3>@product.Name</h3>
+        @product.Description
+        <h4>@product.Price.ToString("c")</h4>
+    </div>
+}
+
