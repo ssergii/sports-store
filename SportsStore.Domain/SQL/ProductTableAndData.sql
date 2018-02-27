@@ -1,4 +1,4 @@
-﻿create table Product (
+﻿create table Products (
     id int not null primary key identity,
     name nvarchar(100) not null,
     description nvarchar(500) not null,
